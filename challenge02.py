@@ -1,10 +1,10 @@
 #!/usr/bin/env python
-
-import json
+"""trying out challenge #2"""
 import requests
 
 
 def main():
+    """Main function doing everything"""
     jsondata = requests.get("http://api.open-notify.org/astros.json")
     astros = jsondata.json()
     print("here is the data for astronauts in space: \n")
